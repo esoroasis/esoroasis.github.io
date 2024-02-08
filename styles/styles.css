@@ -1,0 +1,267 @@
+* {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/white-seamless-texture-wavy-background-interior-wall-decoration-panel-pattern-abstract-waves-tile-backdrop-ai-generartive_700248-41038.jpg);
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.888); */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.888),
+    rgba(255, 176, 176, 0.888)
+  );
+}
+
+.logo {
+  width: 180px;
+  margin: 20px auto 0px auto;
+  text-align: center;
+}
+
+h1,
+h2,
+#text {
+  color: #961c2d;
+  font-weight: 500;
+}
+
+h2 {
+  text-shadow: 1px 1px 0px #8f8f8f;
+}
+
+h1,
+div #text {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+#tokenomics h2 {
+  color: #961c2d;
+  text-shadow: 1px 1px 0px #ffffff;
+  border-bottom: 1px solid white;
+}
+
+#text span {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
+#splash {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.ca {
+  word-wrap: break-word;
+}
+
+section {
+  max-width: 700px;
+  margin: 30px auto;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.flip {
+  transform: rotateX(180deg);
+  transition: transform 1.5s ease-in-out;
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+button {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: #961c2d; /* Futuristic blue for text */
+  border: 2px solid black; /* Black border for a sharper contrast */
+  padding: 5px 15px; /* Reduced padding for a smaller button */
+  border-radius: 5px; /* More angular edges */
+  outline: none;
+  font-size: 14px; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  box-shadow: 0 4px 10px #961c2d; /* Illumination shadow in specified color */
+}
+
+button:hover {
+  background-color: #fee5e7; /* Light blue on hover */
+  color: black;
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 15px #961c2d; /* Enhanced shadow for a lifted appearance */
+}
+
+button:active {
+  transform: translateY(1px); /* Push effect on click */
+  box-shadow: 0 2px 5px #961c2d; /* Reset shadow to original, subtler effect */
+}
+
+#buy ol,
+#roadmap ul {
+  text-align: left;
+  line-height: 2;
+}
+
+footer {
+  opacity: 0.5;
+}
+
+#tokenomics {
+  padding: 10px;
+  border: 3px solid a74f5bb3;
+  background-image: linear-gradient(to bottom, #961c2c3c, #961c863b);
+  box-shadow: 0px 4px 20px #a74f5bb3;
+  margin: 0 auto;
+  max-width: 50%;
+  border-radius: 4px;
+}
+
+#about {
+  padding-bottom: 30px;
+}
+
+#about p {
+  line-height: 25px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulsateGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.75),
+      0 0 20px rgba(255, 105, 180, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 20, 147, 0.85),
+      0 0 30px rgba(255, 20, 147, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.75),
+      0 0 20px rgba(255, 105, 180, 0.5);
+  }
+}
+
+.pulsating-glow {
+  animation: pulsateGlow 2s infinite ease-in-out;
+}
+
+.larger {
+  scale: 1.3;
+}
+
+#buy {
+  border: 3px solid rgba(255, 255, 255, 0.557);
+  border-radius: 4px;
+  box-shadow: 0px 4px 20px white;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.194),
+    rgba(255, 255, 255, 0.39)
+  );
+}
+
+@keyframes glitch {
+  0%,
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translate(2px, -2px);
+    opacity: 0.9;
+  }
+  60% {
+    transform: translate(-2px, -2px);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translate(2px, 2px);
+    opacity: 0.8;
+  }
+}
+
+.glitch {
+  animation: glitch 0.2s infinite;
+}
+
+section {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+section#splash {
+  opacity: 1 !important;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  } /* Fully visible in the middle of the animation */
+}
+
+#roadmap li {
+  opacity: 0; /* Start hidden */
+  animation: fadeInOut 3s infinite; /* Adjust the duration to control the fade speed */
+}
+
+h3 {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+#socials {
+  border: 3px solid rgba(255, 255, 255, 0.548);
+  padding-bottom: 15px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to top,
+    #961c2c0e,
+    rgba(255, 255, 255, 0.103)
+  );
+  margin-bottom: 40px;
+}
+iframe {
+  margin: 10px;
+}
+
+@media (max-width: 764px) {
+  #splash {
+    width: 100%;
+  }
+  #about,
+  #buy,
+  #socials,
+  #roadmap {
+    width: 85%;
+  }
+}

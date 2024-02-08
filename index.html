@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$ESOR - Opposite of ROSE on the Oasis Protocol</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" href="./images/favicon-16x16.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="splash">
+        <img
+          src="./images/fb09ff9b453e2512cda52bc6f7e3bde4.gif"
+          alt="rose logo"
+          class="logo"
+        />
+        <div id="text">
+          <span>$</span>
+          <span>R</span>
+          <span>O</span>
+          <span>S</span>
+          <span>E</span>
+        </div>
+        <h2 class="pulsating-glow">
+          The counterpart of $ROSE on the Oasis Protocol
+        </h2>
+      </section>
+      <br />
+      <section id="tokenomics">
+        <h2 class="pulsating-glow">Tokenomics</h2>
+        <p>Name/Ticker: ESOR</p>
+        <p>Total Supply: 10,000,000,000</p>
+        <p>Blockchain: Oasis Sapphire</p>
+        <p>Tax: 0/0</p>
+        <p class="ca">CA: 0x21d604351DE1321B720632e88E2774ED6CbBEe00</p>
+        <button
+          onclick="navigator.clipboard.writeText('0x21d604351DE1321B720632e88E2774ED6CbBEe00').then(function() { alert('ca copied to clipboard'); }, function(err) { console.error('Could not copy ca: ', err); });"
+        >
+          COPY CA
+        </button>
+      </section>
+
+      <section id="about">
+        <h2 class="pulsating-glow" class="larger">What is $ESOR?</h2>
+        <p>
+          $ESOR is a pioneering memecoin on the Oasis Protocol. Designed to be
+          the first mover, and to appeal to true explorers of the Blockchain,
+          it's a hidden gem that's one of it's kind. Still, thanks to
+          <a
+            href="https://illuminex.xyz/swap?outputCurrency=0x21d604351DE1321B720632e88E2774ED6CbBEe00"
+            >Illuminex</a
+          >
+          Crosschain swaps, it's surprisingly accesible to most traders!
+        </p>
+      </section>
+
+      <!-- <iframe id="dextools-widget"
+      title="DEXTools Trading Chart"
+      width="500"
+      height="400" src="https://www.dextools.io/widget-chart/en/oasis/pe-light/0x597784c90A18a995A9314043C494C7448C0870c0?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"></iframe> -->
+
+      <section id="buy">
+        <h2 class="pulsating-glow" class="larger">How to buy $ESOR?</h2>
+        <p>$ESOR is listed on IlluminexOasis.</p>
+        <p>
+          If you already have ROSE on Oasis, you can skip directly to step 6.
+        </p>
+        <button
+          onclick="window.open('https://illuminex.xyz/swap?outputCurrency=0x21d604351DE1321B720632e88E2774ED6CbBEe00', '_blank');"
+        >
+          GO TO ILLUMINEX
+        </button>
+        <ol>
+          <li>Get a MetaMask wallet.</li>
+          <li>
+            Obtain USDT or ETH on the Ethereum network or BNB on the Binance
+            Smart Chain.
+          </li>
+          <li>Go to the Illuminex swap page and connect your wallet.</li>
+          <li>In the Send box, select USDT, ETH or BNB.</li>
+          <li>
+            Paste the Esor contract address into the token selection box in the
+            Swap and Get box, then select ESOR.
+          </li>
+          <li>
+            Choose an amount and then press the Swap button to get some ESOR.
+          </li>
+        </ol>
+      </section>
+      <section id="roadmap">
+        <h2 class="pulsating-glow" class="larger">Roadmap</h2>
+        <br />
+        <h3>Q1 2024</h3>
+        <ul>
+          <li>Launch, renounce and burn</li>
+          <li>Build community and social media presence</li>
+          <li>Onboard KOls, marketing</li>
+          <li>More TBA soon!</li>
+        </ul>
+      </section>
+      <section id="socials">
+        <h2 class="pulsating-glow" class="larger">Socials</h2>
+        <p>Get in touch with the $ESOR team and community!</p>
+        <button onclick="window.open('https://t.me/ESORTOKEN', '_blank');">
+          Telegram
+        </button>
+        <button
+          onclick="window.open('https://twitter.com/EsorOasis', '_blank');"
+        >
+          Twitter
+        </button>
+      </section>
+      <footer><a href="">web made by komun1kat3</a></footer>
+    </div>
+    <script src="./scripts/flip.js"></script>
+    <script src="./scripts/text-glitcher.js"></script>
+    <script src="./scripts/title.js"></script>
+    <script src="./scripts/parallax.js"></script>
+    <script src="./scripts/appeariser.js"></script>
+    <script src="./scripts/roadmap.js"></script>
+  </body>
+</html>
